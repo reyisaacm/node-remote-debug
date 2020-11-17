@@ -1,0 +1,11 @@
+---
+version: "2.4"
+services:
+  app:
+    image: node-remote-debug-app
+    build:
+      context: .
+    command: npm run start
+    ports:
+      - "5859:5859"
+      - "3333:3333"
